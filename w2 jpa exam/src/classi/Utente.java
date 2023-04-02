@@ -13,15 +13,15 @@ public class Utente {
 	
 	private String nome;
 	private String cognome;
-	//private Date data_nascita;
+	private Date data_nascita;
 	
 	public Utente() {};
 	
 	
-	public Utente(String nome,String cognome){
+	public Utente(String nome,String cognome,Date data_nascita){
 		this.nome=nome;
 		this.cognome=cognome;
-		//this.data_nascita=data_nascita;
+		this.data_nascita=data_nascita;
 		this.numero_tessera=numero_tessera;
 	}
 }

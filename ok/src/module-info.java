@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author firuz
+ *
+ */
+module ok {
+}
