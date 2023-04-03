@@ -5,14 +5,17 @@ import javax.persistence.*;
 
 
 @Entity
-@Table
+@Table(name="utenti")
+
 public class Utente {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long numero_tessera;
-	
+	@Column(nullable=false)
 	private String nome;
+	@Column(nullable=false)
 	private String cognome;
+	@Column(nullable=false)
 	private Date data_nascita;
 	
 	public Utente() {};
@@ -22,6 +25,6 @@ public class Utente {
 		this.nome=nome;
 		this.cognome=cognome;
 		this.data_nascita=data_nascita;
-		this.numero_tessera=numero_tessera;
+
 	}
 }
